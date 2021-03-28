@@ -20,6 +20,7 @@ header {
   ul {
     list-style-type: none;
     display: flex;
+    padding: 0;
 
     li {
       margin-left: 2rem;
@@ -39,6 +40,10 @@ header {
         color: $primary-color;
         font-size: 24px;
         margin: 0;
+      }
+
+      @media screen and (max-width: 900px) {
+        margin: 0px 1rem;
       }
     }
   }
@@ -131,13 +136,11 @@ header {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
+  margin: 4rem 0px;
 
   @media screen and (max-width: 1000px) {
     flex-direction: column;
-  }
-
-  &:first-child {
-    margin-bottom: 8rem;
+    margin: 0;
   }
 }
 

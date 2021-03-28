@@ -17,6 +17,7 @@ header h1 {
 header ul {
   list-style-type: none;
   display: flex;
+  padding: 0;
 }
 header ul li {
   margin-left: 2rem;
@@ -34,6 +35,11 @@ header ul li p {
   color: #ab0b0b;
   font-size: 24px;
   margin: 0;
+}
+@media screen and (max-width: 900px) {
+  header ul li {
+    margin: 0px 1rem;
+  }
 }
 @media screen and (max-width: 900px) {
   header {
@@ -122,14 +128,13 @@ header ul li p {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
+  margin: 4rem 0px;
 }
 @media screen and (max-width: 1000px) {
   .feature-row {
     flex-direction: column;
+    margin: 0;
   }
-}
-.feature-row:first-child {
-  margin-bottom: 8rem;
 }
 
 .feature-item {
