@@ -19,25 +19,22 @@ header ul {
   display: flex;
   padding: 0;
 }
-header ul li {
+header ul a {
   margin-left: 2rem;
   padding: 15px 20px;
   transition: all 0.5s ease-out;
-}
-header ul li:hover {
-  cursor: pointer;
-  background: #ab0b0b;
-}
-header ul li:hover p {
-  color: white;
-}
-header ul li p {
   color: #ab0b0b;
   font-size: 24px;
   margin: 0;
+  text-decoration: none;
+}
+header ul a:hover {
+  cursor: pointer;
+  background: #ab0b0b;
+  color: white;
 }
 @media screen and (max-width: 900px) {
-  header ul li {
+  header ul a {
     margin: 0px 1rem;
   }
 }
@@ -121,14 +118,14 @@ header ul li p {
   }
 }
 .features {
-  padding: 10%;
+  padding: 5% 10%;
 }
 
 .feature-row {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
-  margin: 4rem 0px;
+  margin: 8rem 0px;
 }
 @media screen and (max-width: 1000px) {
   .feature-row {
@@ -191,6 +188,79 @@ footer {
 }
 footer p {
   color: white;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  /* 15% from the top and centered */
+  width: 80%;
+  /* Could be more or less, depending on screen size */
+  color: #ab0b0b;
+  animation-name: animatetop;
+  animation-duration: 0.6s;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #ab0b0b;
+  color: white;
+}
+
+.modal-body {
+  padding: 2px 16px;
+}
+.modal-body p {
+  font-size: 20px;
+}
+
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Add Animation */
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

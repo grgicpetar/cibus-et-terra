@@ -11,9 +11,9 @@
       </div>
       <div>
         <ul>
-          <li><p>Katalog</p></li>
-          <li><p>O nama</p></li>
-          <li><p>Kontakt</p></li>
+          <li><a href="./katalog.html">Katalog</a></li>
+          <li><a href="#">O nama</a</li>
+          <li><a href="#">Kontakt</a></li>
         </ul>
       </div>
     </header>
@@ -46,28 +46,76 @@
         <div class="feature-item">
           <h3>Italesse</h3>
           <p>Opisni text Italesse</p>
-          <button type="button">Prikaži više</button>
+          <button id="italesse-modal-toggle" type="button">Prikaži više</button>
         </div>
         <div class="feature-item">
           <h3>Thrill</h3>
           <p>Opisni text Thrill</p>
-          <button type="button">Prikaži više</button>
+          <button id="thrill-modal-toggle" type="button">Prikaži više</button>
         </div>
       </div>
       <div class="feature-row">
         <div class="feature-item">
           <h3>Pivo</h3>
           <p>Opisni text Pivo</p>
-          <button type="button">Prikaži više</button>
+          <button id="pivo-modal-toggle" type="button">Prikaži više</button>
         </div>
         <div class="feature-item">
           <h3>Hedonist</h3>
           <p>Opisni text Hedonist</p>
-          <button type="button">Prikaži više</button>
+          <button id="hedonist-modal-toggle" type="button">Prikaži više</button>
         </div>
       </div>
     </section>
     <footer><p>Cibus et terra</p></footer>
+
+    <div id="italesse-modal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span id="italesse-modal-close" class="close">&times;</span>
+          <h2>Italesse</h2>
+        </div>
+        <div class="modal-body">
+          <p>Text o italesse</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="thrill-modal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span id="thrill-modal-close" class="close">&times;</span>
+          <h2>Thrill</h2>
+        </div>
+        <div class="modal-body">
+          <p>Text o thrill</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="pivo-modal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span id="pivo-modal-close" class="close">&times;</span>
+          <h2>Pivo</h2>
+        </div>
+        <div class="modal-body">
+          <p>Text o pivo</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="hedonist-modal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span id="hedonist-modal-close" class="close">&times;</span>
+          <h2>Hedonist</h2>
+        </div>
+        <div class="modal-body">
+          <p>Text o hedonist</p>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
 
