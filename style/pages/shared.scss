@@ -1,0 +1,74 @@
+$primary-color: #ab0b0b;
+
+@import url(https://fonts.googleapis.com/css?family=Lato);
+
+* {
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+
+  h1 {
+    font-size: 36px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+  }
+
+  ul {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+
+    a {
+      margin-left: 2rem;
+      padding: 15px 20px;
+      transition: all 0.5s ease-out;
+      color: $primary-color;
+      font-size: 24px;
+      margin: 0;
+      text-decoration: none;
+
+      &:hover {
+        cursor: pointer;
+        background: $primary-color;
+        color: white;
+      }
+
+      @media screen and (max-width: 900px) {
+        margin: 0px 1rem;
+      }
+    }
+
+    .active {
+      background: $primary-color;
+      color: white;
+    }
+  }
+
+  .title {
+    text-decoration: none;
+    color: black;
+  }
+
+  @media screen and (max-width: 900px) {
+    flex-direction: column;
+  }
+}
+
+footer {
+  background: #000;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  padding-left: 2rem;
+
+  p {
+    color: white;
+  }
+}

@@ -1,52 +1,4 @@
-* {
-  box-sizing: border-box;
-}
-
 $primary-color: #ab0b0b;
-
-header {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0px 20px;
-
-  h1 {
-    font-size: 36px;
-    text-transform: uppercase;
-    letter-spacing: 1.2px;
-  }
-
-  ul {
-    list-style-type: none;
-    display: flex;
-    padding: 0;
-
-    a {
-      margin-left: 2rem;
-      padding: 15px 20px;
-      transition: all 0.5s ease-out;
-      color: $primary-color;
-      font-size: 24px;
-      margin: 0;
-      text-decoration: none;
-
-      &:hover {
-        cursor: pointer;
-        background: $primary-color;
-        color: white;
-      }
-
-      @media screen and (max-width: 900px) {
-        margin: 0px 1rem;
-      }
-    }
-  }
-
-  @media screen and (max-width: 900px) {
-    flex-direction: column;
-  }
-}
 
 /* Slideshow container */
 .slideshow-container {
@@ -187,18 +139,6 @@ header {
   }
 }
 
-footer {
-  background: #000;
-  height: 100px;
-  display: flex;
-  align-items: center;
-  padding-left: 2rem;
-
-  p {
-    color: white;
-  }
-}
-
 //modals
 .modal {
   display: none;
@@ -217,7 +157,6 @@ footer {
   background-color: #fefefe;
   margin: 15% auto; /* 15% from the top and centered */
   width: 80%; /* Could be more or less, depending on screen size */
-  color: $primary-color;
   animation-name: animatetop;
   animation-duration: 0.6s;
 }
