@@ -6,7 +6,7 @@
 
 body {
   background-color: #ffffff;
-  background-image: radial-gradient(#ab0b0b 1.3px, transparent 1.3px), radial-gradient(#ab0b0b00 1.3px, #ffffff 1.3px);
+  background-image: radial-gradient(#ab0b0b6b 1.3px, transparent 1.3px), radial-gradient(#ab0b0b00 1.3px, #ffffff 1.3px);
   background-size: 109px 71px;
 }
 
@@ -290,86 +290,36 @@ footer p {
     opacity: 1;
   }
 }
-.features-container {
-  background-color: #f5f5f5;
+.catalogs {
   padding: 5% 10%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.features-container .feature {
-  width: 25%;
-  text-align: center;
+  background-color: #f5f5f5;
   display: flex;
   flex-direction: column;
-  margin: 0 2%;
-  background-color: white;
-  border: 1px solid #cec4c4;
+  align-items: center;
 }
-.features-container .feature img {
-  max-height: 100%;
-  max-width: 100%;
+
+.catalog {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
 }
-.features-container .feature h3 {
+.catalog p {
   color: #ab0b0b;
-  font-size: 22px;
+  font-weight: bold;
+  font-size: 28px;
 }
-.features-container .feature p {
-  font-size: 18px;
-}
-@media screen and (max-width: 600px) {
-  .features-container .feature {
-    width: 50%;
-    margin-bottom: 20px;
-  }
-}
-@media screen and (max-width: 600px) {
-  .features-container {
-    flex-direction: column;
-    align-items: center;
-  }
+.catalog img {
+  width: 100%;
 }
 
-.regular-items-container {
-  padding: 5% 5%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.regular-items-container .regular-item {
-  width: 20%;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  margin: 0 2%;
-  background-color: white;
-  border: 1px solid #cec4c4;
-}
-.regular-items-container .regular-item img {
-  max-height: 100%;
-  max-width: 100%;
-}
-.regular-items-container .regular-item h3 {
-  font-size: 18px;
-}
-.regular-items-container .regular-item p {
-  font-size: 14px;
-}
-@media screen and (max-width: 600px) {
-  .regular-items-container .regular-item {
-    width: 50%;
-    margin-bottom: 20px;
-  }
-}
-
-.main-content {
+.intro {
   padding: 5% 10%;
   background-color: #f5f5f5;
 }
-.main-content h2 {
+.intro h2 {
   font-size: 30px;
 }
-.main-content p {
+.intro p {
   font-size: 20px;
 }
 
@@ -392,6 +342,24 @@ footer p {
 }
 .partner p {
   font-size: 20px;
+}
+
+.intro {
+  padding: 5% 10%;
+  background-color: #f5f5f5;
+}
+.intro h2 {
+  font-size: 30px;
+}
+.intro p {
+  font-size: 20px;
+}
+
+.lokacija {
+  padding: 5% 10%;
+}
+.lokacija iframe {
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,22 @@
+$primary-color: #ab0b0b;
+
+.intro {
+  padding: 5% 10%;
+  background-color: #f5f5f5;
+
+  h2 {
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+}
+
+.lokacija {
+  padding: 5% 10%;
+
+  iframe {
+    width: 100%;
+  }
+}
